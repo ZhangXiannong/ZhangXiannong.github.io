@@ -127,27 +127,53 @@ body {margin:0;font-family:Arial}
 
 .grid-container {
   margin: auto;
-  padding: 100px 0 0 0;
+ /* padding: 100px 0 0 0;*/
   display: grid;
   width:1000px;
-  grid-template-columns: 400px 600px;
-  grid-template-rows: 600px;
- /* border: 1px solid rgba(0, 0, 0, 0.8);*/
+  grid-template-columns: 1000px;
+  grid-template-rows: 100px 550px 450px 150px 150px;
+  /*border: 1px solid rgba(0, 0, 0, 0.8);*/
 }
 
 .item1 {
-  grid-column: 1 ;
+  grid-row: 1 ;
   /*border: 1px solid rgba(0, 0, 0, 0.8);*/
 }
 
 .item2 {
-  grid-column: 2;
+  grid-row: 2;
+  /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+}
+
+.item3 {
+  grid-row: 3;
+  /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+}
+
+.item4 {
+  grid-row: 4;
+  /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+}
+
+.item5 {
+  grid-row: 5;
   /*border: 1px solid rgba(0, 0, 0, 0.8);*/
 }
 
 img.round {
   border-radius: 50%;
 }
+
+div.abstract{
+  line-height: 1.6;
+}
+
+
+
+
+
+
+
 
 </style>
 </head>
@@ -159,14 +185,16 @@ img.round {
   <a href="#about">Laboratory</a>
   <a href="#teaching">Teaching</a>
   <div class="dropdown">
-    <button class="dropbtn">Research 
+    <button class="dropbtn" onclick="location.href='https://zhangxiannong.github.io/research.html';">Research 
       <i class="fa fa-caret-down"></i>
     </button>
+    <!-- 
     <div class="dropdown-content">
       <a href="https://zhangxiannong.github.io/research.html">Link 1</a>
       <a href="#">Link 2</a>
       <a href="#">Link 3</a>
     </div>
+    -->
   </div> 
   <a href="https://zhangxiannong.github.io/CV.html">CV</a> 
 
@@ -184,33 +212,57 @@ img.round {
 <!-- topnav -->
 <div class="grid-container">
   
-  <!-- Player positions-->
+  <!-- research-->
   <div id="item1" class="item1"> 
-
-
-
-
+    <p style = "font-family: Georgia; font-size: 35px">Research</p>
+    <hr>
   </div>
-
-
-  <div id="item2" class="item2"> 
-
-    <div style="padding-left:100px">
-
-
-    <p>page in progress</p>
-
-    
-    </div>
  
+  <!-- paper1-->
+  <div id="item2" class="item2"> 
+      <p style = "font-family: Georgia; font-size: 30px">The impact of negative links: Theory and evidence</p>
+      <p>[Job Market Paper]</p>
+      <img src="figure/N-2-new.png" 
+            id = "ss"
+            style="width:180px;height:210px;margin:0px 350px;"
+            />
 
+      <div class="abstract">
+        <p style = "font-family: Georgia;">I study the impact of negative links through signed network formation. First, I propose a game-theoretical model to study how negative links reshape stable networks. I characterize the properties of pairwise stable and strong stable networks and discuss models' implications through two applications: the military alliance network and the school bullying network. I vary the relative gain of negative links and show that stable networks are assortative and agents tend to be homogenous when the gains are high; stable networks are more star-like when the gains are low. Second, I conduct a continuous-time online experiment to study the behavioral changes related to negative links. I find that subjects are more myopic and less farsighted when negative links are introduced. This is the first paper to both theoretically and behaviorally analyze the impact of negative links.</p>
+        <hr>
+     </div>
+  </div>
+  
+   <!-- paper2-->
+  <div id="item3" class="item3"> 
+      <p style = "font-family: Georgia; font-size: 30px">Is Ellsberg behavior evidence of ambiguity aversion?</p>
+      <p>with Chrsitoph Kuzmics and Brian W. Rogers</p>
+      <img src="figure/boxes.jpg" 
+            id = "ss"
+            style="width:200px;height:150px;margin:0px 350px;"
+            />
+
+      <div class="abstract">
+        <p style = "font-family: Georgia;">We design and implement lab experiments, as close as possible to the Ellsberg two- color urn experiment, to evaluate the positive and normative appeal of behavior arising from models of ambiguity-averse preferences. We report three main empirical findings: First, these preference models do not explain behavior any better than subjective ex- pected utility. Second, subjects do not act on the basis of preferences alone, showing evidence that their behavior reflects an incomplete understanding of the problem. Third, additional clarification of the decision making environment pushes subjects’ choices in the direction of ambiguity aversion models, regardless of whether or not this is also consistent with subjective expected utility, supporting the position that subjects find such behavior normatively appealing.</p>
+        <hr>
+     </div>
+  </div>
+
+   <!-- paper3-->
+  <div id="item4" class="item4"> 
+      <p style = "font-family: Georgia; font-size: 30px">Source of naivete in belief formation</p>
+      <p>with Brian W. Rogers</p>
+      <hr>
 
   </div>
 
-
-
-
-
+   <!-- paper4-->
+  <div id="item5" class="item5"> 
+      <p style = "font-family: Georgia; font-size: 30px">Comments on correlation neglect</p>
+      <p>with Brian W. Rogers</p>
+      <hr>
+ 
+  </div>
 
 
 
