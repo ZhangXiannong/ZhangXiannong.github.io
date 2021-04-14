@@ -3,6 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
 body {margin:0;font-family:Arial}
 
@@ -149,6 +150,91 @@ img.round {
   border-radius: 50%;
 }
 
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+
+div.media {
+  position: relative;
+  left: 300px;
+  width: 600px;
+  border: 3px solid #73AD21;
+}
+
+
+
+
+.grid-container_media {
+  margin: auto;
+  padding: 0 0 0 0;
+  display: grid;
+  width:1000px;
+  height: 50px;
+  grid-template-columns: 350px 200px 200px 200px;
+ /* border: 1px solid rgba(0, 0, 0, 0.8);*/
+}
+
+
+.media_item1 {
+  grid-column: 1;
+
+}
+
+.median_item2 {
+  grid-column: 2;
+
+}
+
+.median_item3 {
+  grid-column: 3;
+
+}
+
+.median_item4 {
+  grid-column: 4;
+
+}
+
+.copy_button{
+  border: none;
+  color: white;
+  padding: 3px 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  font-family: Georgia;
+  margin: 10px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.copy_button1 {
+  background-color: white;
+  color: black; 
+
+}
+
+.copy_button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
 </style>
 </head>
 <body>
@@ -160,7 +246,7 @@ img.round {
   <a href="#teaching">Teaching</a>
   <div class="dropdown">
     <button class="dropbtn" onclick="location.href='https://zhangxiannong.github.io/research.html';">Research 
-      <i class="fa fa-caret-down"></i>
+       <!--<i class="fa fa-caret-down"></i>-->
     </button>
     <!-- 
     <div class="dropdown-content">
@@ -217,26 +303,47 @@ img.round {
     <p>I am a Ph.D. candidate in Economics at Washington University in St. Louis. My research focuses on behavioral and experimental economics, economics of networks, and economic theory.</p>
     
     </div>
- 
-
 
   </div>
-
-
-
-
-
-
-
-
-
 
 </div>
 
 
+   
+
+<div  class="grid-container_media">
+
+  <div class="media_item1"> 
+    <img src="figure/email.png" 
+    id = "email"
+    style="width:300px;height:50px;padding-left:50px;"
+    />
+  </div>
+  
+  <div class="media_item2"> 
+      <button onclick="copyToClipboard()" class="copy_button copy_button1">Copy</button>
+  </div>
+
+  <div class="media_item3"> 
+     <a href="https://www.linkedin.com/in/xiannong-zhang-7274a4201/" class="fa fa-linkedin"></a>
+  </div>
+
+  <div class="media_item4"> 
+    <a href="https://wustl.edu/">
+    <img src="figure/wustl.png" 
+    id = "wustl_icon"
+    style="width:45px;height:45px;padding-top: 0"
+    class = "fa"
+    />
+    </a>
+  </div>
 
 
-
+ <!-- topnav
+ <input type="hidden" value="zhangxiannong@wustl.edu" id="email">
+ <button onclick="copyToClipboard()">Copy</button>
+ -->
+</div>
 
 
 
@@ -252,6 +359,32 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+
+
+function copyToClipboard(text) {
+var inputc = document.body.appendChild(document.createElement("input"));
+inputc.value = "zhangxiannong@wustl.edu";
+inputc.focus();
+inputc.select();
+document.execCommand('copy');
+inputc.parentNode.removeChild(inputc);
+alert("Email adress copied!");
+}
+
+
+/*function copy() {
+  var copyText = document.getElementById("email");
+  copyText.value = text;
+  copyText.select();
+  document.execCommand("copy");
+  alert("email copied!" );
+}*/
+
+
+ // document.getElementById("email");
+ // copyText.select();
+ // copyText.setSelectionRange(0, 99999)
+
 </script>
 
 </body>
