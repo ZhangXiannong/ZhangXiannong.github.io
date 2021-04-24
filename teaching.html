@@ -3,7 +3,6 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 <style>
 body {margin:0;font-family:Arial}
 
@@ -131,108 +130,38 @@ body {margin:0;font-family:Arial}
   padding: 100px 0 0 0;
   display: grid;
   width:1000px;
-  grid-template-columns: 400px 600px;
-  grid-template-rows: 600px;
+  grid-template-columns: 1000px;
+  grid-template-rows: 200px 750px 500px 550px 150px;
  /* border: 1px solid rgba(0, 0, 0, 0.8);*/
 }
 
 .item1 {
-  grid-column: 1 ;
+  grid-row: 1 ;
   /*border: 1px solid rgba(0, 0, 0, 0.8);*/
 }
 
 .item2 {
-  grid-column: 2;
+  grid-row: 2;
+  /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+}
+
+.item3 {
+  grid-row: 3;
+  /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+}
+
+.item4 {
+  grid-row: 4;
+  /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+}
+
+.item5 {
+  grid-row: 5;
   /*border: 1px solid rgba(0, 0, 0, 0.8);*/
 }
 
 img.round {
   border-radius: 50%;
-}
-
-.fa {
-  padding: 10px;
-  font-size: 20px;
-  width: 20px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-
-div.media {
-  position: relative;
-  left: 300px;
-  width: 600px;
-  border: 3px solid #73AD21;
-}
-
-
-
-
-.grid-container_media {
-  margin: auto;
-  padding: 0 0 0 0;
-  display: grid;
-  width:1000px;
-  height: 50px;
-  grid-template-columns: 350px 200px 200px 200px;
- /* border: 1px solid rgba(0, 0, 0, 0.8);*/
-}
-
-
-.media_item1 {
-  grid-column: 1;
-
-}
-
-.median_item2 {
-  grid-column: 2;
-
-}
-
-.median_item3 {
-  grid-column: 3;
-
-}
-
-.median_item4 {
-  grid-column: 4;
-
-}
-
-.copy_button{
-  border: none;
-  color: white;
-  padding: 3px 3px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 22px;
-  font-family: Georgia;
-  margin: 10px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
-
-.copy_button1 {
-  background-color: white;
-  color: black; 
-
-}
-
-.copy_button1:hover {
-  background-color: #4CAF50;
-  color: white;
 }
 
 </style>
@@ -243,10 +172,9 @@ div.media {
 <div class="topnav" id="myTopnav">
   <a href="#about">Others</a>
   <a href="#about">Laboratory</a>
-  <a href="https://zhangxiannong.github.io/teaching.html">Teaching</a>
+  <a href="#teaching">Teaching</a>
   <div class="dropdown">
     <button class="dropbtn" onclick="location.href='https://zhangxiannong.github.io/research.html';">Research 
-       <!--<i class="fa fa-caret-down"></i>-->
     </button>
     <!-- 
     <div class="dropdown-content">
@@ -274,76 +202,62 @@ div.media {
   
   <!-- Player positions-->
   <div id="item1" class="item1"> 
-
-    <img src="figure/xiannong_print.jpg" 
-      id = "p1"
-      style="width:100%;height:80%;"
-      class="round"
-      />
-
-
-
+    <p style = "font-family: Georgia; font-size: 30px"> Insturctor</p>
+    <p style = "font-family: Georgia; font-size: 20px; text-indent: 30px"> 2021</p>
+    <p style = "font-family: Georgia; font-size: 20px; text-indent: 60px"> Econ 508A (Ph.D. math camp)</p>
 
   </div>
 
 
   <div id="item2" class="item2"> 
-
-    <div style="padding-left:100px">
-
-    <h2>
-    Hello, I'm <ruby>
-    Xiannong <rt>/&#643;i&aelig;&#331;n&#596;&#720;&#331;/</rt>
-    &nbspZhang <rt>/d&#658;&#652;n/</rt>
-    </ruby>(張　先農)
-    </h2>
-
-
-    <p>Welcome to my website!</p>
-    <p>I am a Ph.D. candidate in Economics at Washington University in St. Louis. My research focuses on behavioral and experimental economics, economics of networks, and economic theory.</p>
-    
-    </div>
-
+    <p style = "font-family: Georgia; font-size: 30px"> Teaching assistant</p>
+    <p style = "font-family: Georgia; font-size: 20px; text-indent: 30px"> 2020</p>
+    <p style = "font-family: Georgia; font-size: 20px; text-indent: 60px"> Econ 404 Behavioral and experimental economics</p>
+    <p style = "font-family: Georgia; font-size: 20px; text-indent: 30px"> 2019</p>
+    <p style = "font-family: Georgia; font-size: 20px; text-indent: 60px"> Econ 404 Behavioral and experimental economics</p>
+    <p style = "font-family: Georgia; font-size: 20px; text-indent: 60px"> MEC 722 Managerial economics</p>
+    <p style = "font-family: Georgia; font-size: 20px; text-indent: 60px"> MEC 595 Game theory for business</p>
+    <p style = "font-family: Georgia; font-size: 20px; text-indent: 30px"> 2018</p>
+    <p style = "font-family: Georgia; font-size: 20px; text-indent: 60px"> Econ 404 Behavioral and experimental economics</p>
+    <p style = "font-family: Georgia; font-size: 20px; text-indent: 60px"> Econ 506 Topics in advanced theory (Ph.D. 2<sup>nd</sup> year micro)</p>
+    <p style = "font-family: Georgia; font-size: 20px; text-indent: 60px"> MEC 722 Managerial economics</p>
+    <p style = "font-family: Georgia; font-size: 20px; text-indent: 60px"> MEC 595 Game theory for business</p>
+     <p style = "font-family: Georgia; font-size: 20px; text-indent: 30px"> 2017</p>
+    <p style = "font-family: Georgia; font-size: 20px; text-indent: 60px"> Econ 404 Behavioral and experimental economics</p>
+    <p style = "font-family: Georgia; font-size: 20px; text-indent: 60px"> Econ 460 Urban economics</p>
+ 
   </div>
+
+  <div id="item3" class="item3"> 
+    <p style = "font-family: Georgia; font-size: 30px"> Guest lecturer</p>
+    <p style = "font-family: Georgia; font-size: 20px; text-indent: 30px"> 2020</p>
+    <p style = "font-family: Georgia; font-size: 20px; text-indent: 60px"> Econ 404 Behavioral and experimental economics: Ambiguity aversion</p>
+
+    <p style = "font-family: Georgia; font-size: 20px; text-indent: 30px"> 2019</p>
+    <p style = "font-family: Georgia; font-size: 20px; text-indent: 60px"> Econ 404 Behavioral and experimental economics: Ambiguity aversion</p>
+
+    <p style = "font-family: Georgia; font-size: 20px; text-indent: 30px"> 2018</p>
+    <p style = "font-family: Georgia; font-size: 20px; text-indent: 60px"> Econ 404 Behavioral and experimental economics: EU theory v.s. empirical findings</p>
+    <p style = "font-family: Georgia; font-size: 20px; text-indent: 60px"> Econ 404 Behavioral and experimental economics: Probability judgements</p>
+    <p style = "font-family: Georgia; font-size: 20px; text-indent: 60px"> Econ 1011 Introduction to microeconomics: Profit and the invisible hands</p>
+
+
+ 
+  </div>
+
+
+
+
+
+
+
 
 </div>
 
 
-   
-
-<div  class="grid-container_media">
-
-  <div class="media_item1"> 
-    <img src="figure/email.png" 
-    id = "email"
-    style="width:300px;height:50px;padding-left:50px;"
-    />
-  </div>
-  
-  <div class="media_item2"> 
-      <button onclick="copyToClipboard()" class="copy_button copy_button1">Copy</button>
-  </div>
-
-  <div class="media_item3"> 
-     <a href="https://www.linkedin.com/in/xiannong-zhang-7274a4201/" class="fa fa-linkedin"></a>
-  </div>
-
-  <div class="media_item4"> 
-    <a href="https://wustl.edu/">
-    <img src="figure/wustl.png" 
-    id = "wustl_icon"
-    style="width:45px;height:45px;padding-top: 0"
-    class = "fa"
-    />
-    </a>
-  </div>
 
 
- <!-- topnav
- <input type="hidden" value="zhangxiannong@wustl.edu" id="email">
- <button onclick="copyToClipboard()">Copy</button>
- -->
-</div>
+
 
 
 
@@ -359,40 +273,9 @@ function myFunction() {
     x.className = "topnav";
   }
 }
-
-
-function copyToClipboard(text) {
-var inputc = document.body.appendChild(document.createElement("input"));
-inputc.value = "zhangxiannong@wustl.edu";
-inputc.focus();
-inputc.select();
-document.execCommand('copy');
-inputc.parentNode.removeChild(inputc);
-alert("Email address copied!");
-}
-
-
-/*function copy() {
-  var copyText = document.getElementById("email");
-  copyText.value = text;
-  copyText.select();
-  document.execCommand("copy");
-  alert("email copied!" );
-}*/
-
-
- // document.getElementById("email");
- // copyText.select();
- // copyText.setSelectionRange(0, 99999)
-
 </script>
 
 </body>
 </html>
 
-<!-- code source: 
-https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_responsive_navbar_dropdown
-
-resposive navigation bar
- -->
 
