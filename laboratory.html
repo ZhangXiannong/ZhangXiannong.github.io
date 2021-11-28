@@ -131,13 +131,13 @@ body {margin:0;font-family:Arial}
   display: grid;
   width:1000px;
   grid-template-columns: 1000px;
-  grid-template-rows: 100px 550px 450px 550px 150px;
-  /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+  grid-template-rows: 200px 1000px 450px 550px 150px;
+  /* border: 1px solid rgba(0, 0, 0, 0.8);*/
 }
 
 .item1 {
   grid-row: 1 ;
-  /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+  border: 1px solid rgba(0, 0, 0, 0.8);
 }
 
 .item2 {
@@ -187,7 +187,45 @@ a:active {
 }
 
 
+.containerNF {
+  margin: auto;
+  display: grid;
+  width:1000px;
+  grid-template-columns: 500px 500px;
+  grid-template-rows: 500px 100px 400px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
 
+.NFitem1 {
+  grid-row: 1 ;
+  grid-column: 1;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.NFitem2 {
+  grid-row: 1 ;
+  grid-column: 2;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.NFitem3 {
+  grid-row: 2 ;
+  grid-column: 1;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.NFitem4 {
+  grid-row: 2 ;
+  grid-column: 2;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.NFitem5 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 3 ;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
 
 
 </style>
@@ -228,29 +266,63 @@ a:active {
   
   <!-- research-->
   <div id="item1" class="item1"> 
-    <p style = "font-family: Georgia; font-size: 35px">Research</p>
+    <p style = "font-family: Georgia; font-size: 35px">Laboratory</p>
+    <p style = "font-family: Georgia; font-size: 20px">This page describes the past and ongoing experiments that I designed, programmed, and implemented. Code packages and instructions are available upon request. </p>
     <hr>
   </div>
  
   <!-- paper1-->
   <div id="item2" class="item2"> 
-      <p><a href="https://zhangxiannong.github.io/paper/negative_links.pdf" style = "font-family: Georgia; font-size: 30px">Negative Links</a></p>
-      <p>[Job Market Paper]</p>
-      <img src="figure/N-2-new.png" 
-            id = "ss"
-            style="width:180px;height:210px;margin:0px 350px;"
+      <p style = "font-family: Georgia; font-size: 30px">Network formation</p>
+
+      <div class="containerNF">
+
+          <div class="NFitem1"> 
+            <img src="lab/networkformation/PO.png" 
+            style="width:500px;height:250px;margin:0px 0px;"
             />
+          </div>
+
+          <div class="NFitem2"> 
+            <img src="lab/networkformation/PN.png"
+            style="width:500px;height:250px;margin:0px 0px;"
+            />
+          </div>
+
+          <div class="NFitem3"> 
+            <p style = "font-family: Georgia;">Introduction to treatment 1</p>
+          </div>
+
+          <div class="NFitem4"> 
+            <p style = "font-family: Georgia;">Introduction to treatment 2</p>
+          </div>
+
+          <div class="NFitem5"> 
+              <p style = "font-family: Georgia;">I study the impact of negative links through signed network formation. First, I propose a game-theoretical model to study how negative links reshape stable networks. I characterize the properties of pairwise stable and strong stable networks and discuss models' implications through two applications: the military alliance network and the school bullying network. I vary the relative gain of negative links and show that stable networks are assortative and agents tend to be homogenous when the gains are high; stable networks are more star-like when the gains are low. Second, I conduct a continuous-time online experiment to study the behavioral changes related to negative links. I find that subjects are more myopic and less farsighted when negative links are introduced. This is the first paper to both theoretically and behaviorally analyze the impact of negative links.</p>
+          </div>
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+      
 
       <div class="abstract">
-        <p style = "font-family: Georgia;">This paper studies the impact of negative links on signed network structure. First, I propose a theoretical model to study stable networks in the presence of negative links. I characterize the properties of pairwise-stable and strong-stable networks and discuss their implications in two applications: the military-alliance network and the school-bullying network. In the first application, I show that agents with the same degree tend to be positively connected to each other. In the second application, I show that star-like structures may arise in stable networks: some agents become friends with many others, and some remain isolated. Next, I conduct a continuous-time experiment to study the behavioral changes associated with the presence of negative links. I find that when negative links are introduced, subjects become more myopic and less farsighted. Methodologically, this is the first paper to explore the impacts of negative links in an experimental setting.</p>
+        <p style = "font-family: Georgia;">I study the impact of negative links through signed network formation. First, I propose a game-theoretical model to study how negative links reshape stable networks. I characterize the properties of pairwise stable and strong stable networks and discuss models' implications through two applications: the military alliance network and the school bullying network. I vary the relative gain of negative links and show that stable networks are assortative and agents tend to be homogenous when the gains are high; stable networks are more star-like when the gains are low. Second, I conduct a continuous-time online experiment to study the behavioral changes related to negative links. I find that subjects are more myopic and less farsighted when negative links are introduced. This is the first paper to both theoretically and behaviorally analyze the impact of negative links.</p>
         <hr>
      </div>
   </div>
-
   
    <!-- paper2-->
   <div id="item3" class="item3"> 
-      <p><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3437331" style = "font-family: Georgia; font-size: 30px">Is Ellsberg Behavior Evidence of Ambiguity Aversion?</a></p>
+      <p><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3437331" style = "font-family: Georgia; font-size: 30px">Is Ellsberg behavior evidence of ambiguity aversion?</a></p>
       <p>with Chrsitoph Kuzmics and Brian W. Rogers  [under review]</p>
       <img src="figure/boxes.jpg" 
             id = "ss"
@@ -265,7 +337,7 @@ a:active {
 
    <!-- paper3-->
   <div id="item4" class="item4"> 
-      <p style = "font-family: Georgia; font-size: 30px">Belief Formation on Networks: Experiments on Precision and Correlation neglect</p>
+      <p style = "font-family: Georgia; font-size: 30px">Belief formation on networks: Experiments on precision and correlation neglect</p>
       <p>with Brian W. Rogers [working paper]</p>
            <img src="figure/us1.png" 
             id = "ss"
@@ -273,7 +345,7 @@ a:active {
             />
 
       <div class="abstract">
-        <p style = "font-family: Georgia;">  We design and run experiments to study information processing through interconnected channels. We identify two distinct biases: correlation neglect and precision neglect, the latter of which is novel in the literature. Both biases are important determinants of behavior. While about half of our subjects provide some nearly rational estimates, the remaining behavior is highly erratic. We utilize two novel design features and show that both of them dramatically change behavior, resulting in a complete elimination of rational estimates. The first feature is what we call unsolvability, in which posterior beliefs are nondegenerate. The second feature is requiring subjects to think about the problem abstractly, by providing a formula rather than an explicit answer.</p>
+        <p style = "font-family: Georgia;">  We design and run experiments to study information processing through interconnected channels.  We identify two distinct biases: correlation neglect and precision neglect, the latter of which is novel in the literature.  Both biases are important determinants of behavior.  While about half of our subjects provide some nearly rational estimates, the remaining behavior is highly erratic.  We utilize two novel design features, and show that both of them dramatically change behavior, and result in a complete elimination of rational estimates.  The first is feature is what we call unsolvability, in which posterior beliefs are nondegenerate.  The second feature is requiring subjects to think about the problem abstractly, by providing a formula rather than an explicit answer.</p>
         <hr>
      </div>
 
@@ -281,7 +353,7 @@ a:active {
 
    <!-- paper4-->
   <div id="item5" class="item5"> 
-      <p style = "font-family: Georgia; font-size: 30px">Comments on Correlation Neglect</p>
+      <p style = "font-family: Georgia; font-size: 30px">Comments on correlation neglect</p>
       <p>with Brian W. Rogers [under review]</p>
       <hr>
  
